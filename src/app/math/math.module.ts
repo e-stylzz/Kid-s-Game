@@ -5,6 +5,7 @@ import { MathRoutingModule } from './math-routing.module';
 import { HomeComponent } from './home/home.component';
 import { MaterialModule } from '../shared/material.module';
 import { AdditionComponent } from './addition/addition.component';
+import { SubtractionComponent } from './subtraction/subtraction.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { AdditionComponent } from './addition/addition.component';
     MathRoutingModule,
     MaterialModule
   ],
-  declarations: [HomeComponent, AdditionComponent]
+  declarations: [HomeComponent, AdditionComponent, SubtractionComponent]
 })
 export class MathModule { }
