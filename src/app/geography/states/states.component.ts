@@ -30,6 +30,19 @@ export class StatesComponent implements OnInit {
     const answer4 = this.states[Math.floor(Math.random() * this.states.length)];
 
     this.answer_pool.push(this.answer, answer2, answer3, answer4);
+    this.answer_pool = this.shuffle(this.answer_pool);
+  }
+
+  shuffle(array) {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
   }
 
   checkAnswer(answer: string) {
