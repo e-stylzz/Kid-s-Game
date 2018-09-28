@@ -8,6 +8,8 @@ import { MaterialModule } from './shared/material.module';
 import { MathModule } from './math/math.module';
 import { GeographyModule } from './geography/geography.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserAnimationsModule,
     MaterialModule,
     MathModule,
-    GeographyModule
+    GeographyModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
