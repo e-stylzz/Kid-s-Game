@@ -1,5 +1,7 @@
 <div fxLayout="row" fxLayoutAlign="center" class="state">
-  <img src="./assets/states/{{answer}}.png" alt="{{answer}}" height="400" />
+  <div fxFlex.xs="100" fxFlex.gt-sm="70" fxFlex.md="50">
+      <img src="./assets/states/{{answer}}.png" alt="{{answer}}" class="responsive-image" />
+  </div>
 </div>
 
 <div fxLayout="row" fxLayoutAlign="center" *ngIf="!showAnswer">
