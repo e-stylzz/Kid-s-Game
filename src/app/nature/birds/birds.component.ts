@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BirdsComponent implements OnInit {
 
-  birds = [ 'Oriole', 'Robin', 'Cardinal', 'Blue Jay', 'Gold Finch'];
+  birds = [
+    'Oriole', 'Robin', 'Cardinal', 'Blue Jay', 'Gold Finch', 'Crow', 'Chickadee',
+    'House Finch', 'Bald Eagle', 'Ruby Throated Hummingbird'
+  ];
   answer: string;
   answer_pool = [];
   showAnswer: boolean;
