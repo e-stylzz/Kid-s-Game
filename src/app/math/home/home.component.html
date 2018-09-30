@@ -6,12 +6,14 @@
       <mat-card-subtitle>Basic Addition Questions</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        +
-      </p>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="center" class="circle green">
+          <span class="large">+</span>
+        </div>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-      <a mat-button routerLink="addition">GO</a>
+      <a mat-raised-button color="warn" routerLink="addition">GO</a>
     </mat-card-actions>
   </mat-card>
 
@@ -21,12 +23,14 @@
       <mat-card-subtitle>Basic Subtraction Questions</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        -
-      </p>
+      <div fxLayout="row" fxLayoutAlign="center">
+        <div fxLayout="column" fxLayoutAlign="center" class="circle purple">
+          <span class="large">-</span>
+        </div>
+      </div>
     </mat-card-content>
     <mat-card-actions>
-      <a mat-button routerLink="subtraction">GO</a>
+      <a mat-raised-button color="warn" routerLink="subtraction">GO</a>
     </mat-card-actions>
   </mat-card>
 </div>

@@ -1,3 +1,24 @@
 mat-card {
   margin: 10px;
 }
+
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.large {
+  vertical-align: center;
+  text-align: center;
+  font-size: 200px;
+  color: white;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}

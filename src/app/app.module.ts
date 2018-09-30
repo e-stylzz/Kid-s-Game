@@ -10,6 +10,7 @@ import { GeographyModule } from './geography/geography.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NatureModule } from './nature/nature.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { environment } from '../environments/environment';
     MaterialModule,
     MathModule,
     GeographyModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NatureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
