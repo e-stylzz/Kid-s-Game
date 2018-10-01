@@ -9,7 +9,7 @@ export class BirdsComponent implements OnInit {
 
   birds = [
     'Oriole', 'Robin', 'Cardinal', 'Blue Jay', 'Gold Finch', 'Crow', 'Chickadee',
-    'House Finch', 'Bald Eagle', 'Ruby Throated Hummingbird'
+    'House Finch', 'Bald Eagle', 'Ruby Throated Hummingbird', 'Bluebird'
   ];
   answer: string;
   answer_pool = [];

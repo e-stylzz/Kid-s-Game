@@ -8,9 +8,12 @@
   height: 100%;
 }
 
-.state {
-  /* padding: 50px 0; */
-}
+/* .responsive-image {
+  width: auto;
+  min-width: 80%;
+  max-width: 100%;
+  height: auto;
+} */
 
 .answer {
   background-color: grey;
