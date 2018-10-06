@@ -5,6 +5,7 @@ import { NatureRoutingModule } from './nature-routing.module';
 import { HomeComponent } from './home/home.component';
 import { BirdsComponent } from './birds/birds.component';
 import { MaterialModule } from '../shared/material.module';
+import { DinosaursComponent } from './dinosaurs/dinosaurs.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { MaterialModule } from '../shared/material.module';
     NatureRoutingModule,
     MaterialModule
   ],
-  declarations: [HomeComponent, BirdsComponent]
+  declarations: [HomeComponent, BirdsComponent, DinosaursComponent]
 })
 export class NatureModule { }
