@@ -10,7 +10,11 @@ export class DinosaursComponent implements OnInit {
   dinosaurs = [
     'Allosaurus', 'Ankylosaurus', 'Apatosaurus', 'Argentinosaurus', 'Dimetrodon', 'Diplodocus',
     'Iguanodon', 'Kentrosaurus', 'Parasaurolophus', 'Spinosaurus', 'Stegosaurus', 'Triceratops',
-    'Tyranosaurus Rex', 'Utahraptor', 'Velociraptor'
+    'Tyranosaurus Rex', 'Utahraptor', 'Velociraptor', 'Mosasaurus', 'Plesiosaurus', 'Pachycephalosaurus',
+    'Paralititan', 'Nurosaurus', 'Brachiosaurus', 'Shunosaurus', 'Edmontosaurus', 'Therizinosaurus',
+    'Amargasaurus', 'Tsintaosaurus', 'Maiasaura', 'Plateosaurus', 'Corythosaurus', 'Carnotaurus',
+    'Ouranosaurus', 'Styracosaurus', 'Protoceratops', 'Herrerasaurus', 'Pentaceratops', 'Struthiomimus',
+    'Archaeopteryx', 'Baryonyx'
   ];
   answer: string;
   answer_pool = [];
