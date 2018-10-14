@@ -73,7 +73,7 @@ export class Level2Component implements OnInit {
       'Level': 2
     },
     {
-      'Question': '______ was a plant eats with spikes for thumbs?',
+      'Question': '______ was a plant eater with spikes for thumbs?',
       'Answer': 'Iguanodon',
       'Bank': ['Iguanodon', 'Pentaceratops', 'Velociraptor', 'Struthiomimus'],
       'Type': 'Dinosaur',
