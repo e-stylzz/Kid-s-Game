@@ -1,12 +1,12 @@
 <div fxLayout="row" fxLayoutAlign="center" class="state">
   <div fxFlex.xs="100" fxFlex.gt-sm="70" fxFlex.md="50">
-      <p>{{test.question}}</p>
+      <p>{{question.Question}}</p>
   </div>
 </div>
 
 <div fxLayout="row" fxLayoutAlign="center" *ngIf="!showAnswer">
   <mat-list>
-    <mat-list-item *ngFor="let answer of test.bank">
+    <mat-list-item *ngFor="let answer of question.Bank">
       <button mat-button class="answer" (click)="checkAnswer(answer)">
           {{answer}}
       </button>
