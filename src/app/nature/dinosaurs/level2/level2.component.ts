@@ -46,8 +46,8 @@ export class Level2Component implements OnInit {
     },
     {
       'Question': '______ is the largest meat eater?',
-      'Answer': 'Spinossaurus',
-      'Bank': ['Spinossaurus', 'Tyranosaurus Rex', 'Velociraptor', 'Iguanadon'],
+      'Answer': 'Spinosaurus',
+      'Bank': ['Spinosaurus', 'Tyranosaurus Rex', 'Velociraptor', 'Iguanadon'],
       'Type': 'Dinosaur',
       'Level': 2
     },
