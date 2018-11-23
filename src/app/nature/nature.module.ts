@@ -7,6 +7,7 @@ import { BirdsComponent } from './birds/birds.component';
 import { MaterialModule } from '../shared/material.module';
 import { DinosaursComponent } from './dinosaurs/dinosaurs.component';
 import { Level2Component } from './dinosaurs/level2/level2.component';
+import { BugsComponent } from './bugs/bugs.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { Level2Component } from './dinosaurs/level2/level2.component';
     NatureRoutingModule,
     MaterialModule
   ],
-  declarations: [HomeComponent, BirdsComponent, DinosaursComponent, Level2Component]
+  declarations: [HomeComponent, BirdsComponent, DinosaursComponent, Level2Component, BugsComponent]
 })
 export class NatureModule { }
