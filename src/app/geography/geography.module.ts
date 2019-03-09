@@ -5,6 +5,7 @@ import { GeographyRoutingModule } from './geography-routing.module';
 import { HomeComponent } from './home/home.component';
 import { StatesComponent } from './states/states.component';
 import { MaterialModule } from '../shared/material.module';
+import { StatesBySizeComponent } from './states-by-size/states-by-size.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { MaterialModule } from '../shared/material.module';
     GeographyRoutingModule,
     MaterialModule
   ],
-  declarations: [HomeComponent, StatesComponent]
+  declarations: [HomeComponent, StatesComponent, StatesBySizeComponent]
 })
 export class GeographyModule { }
