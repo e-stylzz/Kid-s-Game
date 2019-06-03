@@ -32,6 +32,6 @@ action "Deploy to Azure Webapp" {
   needs = ["Azure Login"]
   env = {
     AZURE_APP_NAME = "KidsGame"
-    AZURE_APP_PACKAGE_LOCATION = "dist"
+    AZURE_APP_PACKAGE_LOCATION = ".\\dist"
   }
 }
