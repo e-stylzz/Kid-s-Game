@@ -3,10 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-subtraction',
   templateUrl: './subtraction.component.html',
-  styleUrls: ['./subtraction.component.css']
+  styleUrls: ['./subtraction.component.css'],
 })
 export class SubtractionComponent implements OnInit {
-
   number1: number;
   number2: number;
   answer: number;
@@ -14,16 +13,16 @@ export class SubtractionComponent implements OnInit {
   showAnswer: boolean;
   correct: boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.showAnswer = false;
-    this.number1 = this.getRandomInt(0, 10);
+    this.number1 = this.getRandomInt(0, 20);
     this.number2 = this.getRandomInt(0, this.number1);
     this.answer = this.number1 - this.number2;
 
-    const answer2 = this.getRandomInt(0, 10);
-    const answer3 = this.getRandomInt(0, 10);
+    const answer2 = this.getRandomInt(0, 20);
+    const answer3 = this.getRandomInt(0, 15);
     const answer4 = this.getRandomInt(0, 10);
 
     this.answer_pool.push(this.answer, answer2, answer3, answer4);
@@ -40,7 +39,9 @@ export class SubtractionComponent implements OnInit {
   }
 
   shuffle(array) {
-    let currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length,
+      temporaryValue,
+      randomIndex;
     while (0 !== currentIndex) {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex -= 1;
@@ -63,5 +64,4 @@ export class SubtractionComponent implements OnInit {
       console.log('Wrong');
     }
   }
-
 }

@@ -1,0 +1,28 @@
+@media screen and (min-width: 601px) {
+  .large {
+    font-size: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .large {
+    font-size: 150px;
+  }
+}
+
+.mat-list-item {
+  float: right;
+}
+
+.answer {
+  background-color: grey;
+  color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-addition',
-  templateUrl: './addition.component.html',
-  styleUrls: ['./addition.component.css'],
+  selector: 'app-multiplecation',
+  templateUrl: './multiplecation.component.html',
+  styleUrls: ['./multiplecation.component.css'],
 })
-export class AdditionComponent implements OnInit {
+export class MultiplecationComponent implements OnInit {
   number1: number;
   number2: number;
   answer: number;
@@ -17,13 +17,13 @@ export class AdditionComponent implements OnInit {
 
   ngOnInit() {
     this.showAnswer = false;
-    this.number1 = this.getRandomInt(0, 20);
-    this.number2 = this.getRandomInt(0, 20);
-    this.answer = this.number1 + this.number2;
+    this.number1 = this.getRandomInt(0, 5);
+    this.number2 = this.getRandomInt(0, 5);
+    this.answer = this.number1 * this.number2;
 
-    const answer2 = this.getRandomInt(0, 40);
-    const answer3 = this.getRandomInt(0, 30);
-    const answer4 = this.getRandomInt(0, 20);
+    const answer2 = this.getRandomInt(0, 25);
+    const answer3 = this.getRandomInt(0, 20);
+    const answer4 = this.getRandomInt(0, 15);
 
     this.answer_pool.push(this.answer, answer2, answer3, answer4);
     this.answer_pool = this.shuffle(this.answer_pool);
