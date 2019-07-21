@@ -1,0 +1,36 @@
+<div fxLayout="row" fxLayoutAlign="center">
+  <div fxFlex.xs="100" fxFlex.gt-sm="70" fxFlex.md="50" class="check">
+    <h1>{{ answer.symbol }}</h1>
+  </div>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="center" *ngIf="!showAnswer">
+  <mat-list>
+    <mat-list-item *ngFor="let answer of answer_pool">
+      <button mat-button class="answer" (click)="checkAnswer(answer)">
+        {{ answer }}
+      </button>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+<div fxLayout="column" *ngIf="showAnswer">
+  <div *ngIf="correct" fxLayout="column">
+    <div fxLayoutAlign="center"><h1>You are correct!</h1></div>
+    <div fxLayoutAlign="center"><img src="../assets/correct.png" height="50" width="50" /></div>
+  </div>
+
+  <div fxLayout="column" *ngIf="!correct">
+    <div fxLayout="row" fxLayoutAlign="center"><h2>Wrong!</h2></div>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <img class="wrong" src="../assets/incorrect.jpeg" height="50" width="50" />
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center">
+      The correct answer was: <strong>&nbsp;{{ answer }}</strong>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center">
+    <a href="/science/periodic-table">Play Again</a>
+  </div>
+</div>
