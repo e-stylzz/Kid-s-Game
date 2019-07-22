@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { elements } from './data';
+import { pElement } from './element';
 
 @Component({
   selector: 'app-periodic-table',
@@ -8,7 +9,7 @@ import { elements } from './data';
 })
 export class PeriodicTableComponent implements OnInit {
   elements = elements;
-  answer: object;
+  answer: pElement;
   answer_pool = [];
   showAnswer: boolean;
   correct: boolean;
