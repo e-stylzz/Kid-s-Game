@@ -24,7 +24,9 @@ a {
   padding-bottom: 10px;
 }
 
-.check {
-  font-size: 75px;
+.question {
+  font-size: 150px;
   margin: 0 auto;
+  padding: 50px 0;
+  margin: 20px 0;
 }

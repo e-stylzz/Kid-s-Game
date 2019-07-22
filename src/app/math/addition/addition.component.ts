@@ -17,12 +17,12 @@ export class AdditionComponent implements OnInit {
 
   ngOnInit() {
     this.showAnswer = false;
-    this.number1 = this.getRandomInt(0, 20);
+    this.number1 = this.getRandomInt(1, 20);
     this.number2 = this.getRandomInt(0, 20);
     this.answer = this.number1 + this.number2;
 
-    const answer2 = this.getRandomInt(0, 40);
-    const answer3 = this.getRandomInt(0, 30);
+    const answer2 = this.getRandomInt(50, 40);
+    const answer3 = this.getRandomInt(5, 30);
     const answer4 = this.getRandomInt(0, 20);
 
     this.answer_pool.push(this.answer, answer2, answer3, answer4);

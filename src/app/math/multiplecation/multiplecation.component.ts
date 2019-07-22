@@ -17,12 +17,12 @@ export class MultiplecationComponent implements OnInit {
 
   ngOnInit() {
     this.showAnswer = false;
-    this.number1 = this.getRandomInt(0, 5);
-    this.number2 = this.getRandomInt(0, 5);
+    this.number1 = this.getRandomInt(1, 7);
+    this.number2 = this.getRandomInt(0, 7);
     this.answer = this.number1 * this.number2;
 
-    const answer2 = this.getRandomInt(0, 25);
-    const answer3 = this.getRandomInt(0, 20);
+    const answer2 = this.getRandomInt(10, 49);
+    const answer3 = this.getRandomInt(5, 20);
     const answer4 = this.getRandomInt(0, 15);
 
     this.answer_pool.push(this.answer, answer2, answer3, answer4);
