@@ -4,8 +4,8 @@
 }
 
 .responsive-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 .answer {
@@ -27,4 +27,13 @@ a {
 
 .wrong {
   padding-bottom: 10px;
+}
+
+.answer-section {
+  height: 200px;
+  padding: 7px;
+}
+
+#state {
+  max-height: calc(100vh - 200px);
 }
